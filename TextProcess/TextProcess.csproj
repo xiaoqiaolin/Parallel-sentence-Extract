@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17184180-6616-4317-B65A-4AAB74250BB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextProcess</RootNamespace>
+    <AssemblyName>TextProcess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbHelperSQL.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NLPCC.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimilarProcess.cs" />
+    <Compile Include="strictProcess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="temps.cs" />
+    <Compile Include="Term.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Data\20141225.err" />
+    <None Include="Data\20151225.err" />
+    <None Include="Data\20151228.err" />
+    <None Include="Data\20160107.err" />
+    <None Include="Data\20160119.err" />
+    <None Include="Data\20161102.err" />
+    <None Include="Data\20161206.err" />
+    <None Include="Data\BIG2GBK.map" />
+    <None Include="Data\BIG5.pdat" />
+    <None Include="Data\BIG5.wordlist" />
+    <None Include="Data\BiWord.big" />
+    <None Include="Data\charset.type" />
+    <None Include="Data\CoreDict.pdat" />
+    <None Include="Data\CoreDict.pos" />
+    <None Include="Data\CoreDict.unig" />
+    <None Include="Data\English\English.pdat" />
+    <None Include="Data\English\English.pos" />
+    <None Include="Data\English\English.ung" />
+    <None Include="Data\English\English.wordlist" />
+    <None Include="Data\English\Irrel2regular.map" />
+    <None Include="Data\English\ne.pdat" />
+    <None Include="Data\English\ne.pos" />
+    <None Include="Data\English\ne.wordlist" />
+    <None Include="Data\FieldDict.pdat" />
+    <None Include="Data\FieldDict.pos" />
+    <None Include="Data\FTU8.pdat" />
+    <None Include="Data\FTU8.wordlist" />
+    <None Include="Data\FTU82GBK.map" />
+    <None Include="Data\GBK.pdat" />
+    <None Include="Data\GBK.wordlist" />
+    <None Include="Data\GBK2BIG.map" />
+    <None Include="Data\GBK2FTU8.map" />
+    <None Include="Data\GBK2GBKC.map" />
+    <None Include="Data\GBK2UTF.map" />
+    <None Include="Data\GBKA.pdat" />
+    <None Include="Data\GBKA.wordlist" />
+    <None Include="Data\GBKA2UTF.map" />
+    <None Include="Data\GBKC.pdat" />
+    <None Include="Data\GBKC.wordlist" />
+    <None Include="Data\GBKC2GBK.map" />
+    <None Include="Data\GranDict.pdat" />
+    <None Include="Data\GranDict.pos" />
+    <None Include="Data\ICTPOS.map" />
+    <None Include="Data\location.map" />
+    <None Include="Data\location.pdat" />
+    <None Include="Data\location.wordlist" />
+    <None Include="Data\NLPIR.ctx" />
+    <None Include="Data\NLPIR_First.map" />
+    <None Include="Data\nr.ctx" />
+    <None Include="Data\nr.fsa" />
+    <None Include="Data\nr.role" />
+    <None Include="Data\PKU.map" />
+    <None Include="Data\PKU_First.map" />
+    <None Include="Data\sentiment.pdat" />
+    <None Include="Data\sentiment.ung" />
+    <None Include="Data\UserDict.pdat" />
+    <None Include="Data\UTF2GBK.map" />
+    <None Include="Data\UTF2GBKA.map" />
+    <None Include="Data\UTF8.pdat" />
+    <None Include="Data\UTF8.wordlist" />
+    <None Include="DLL\NLPIR.lib" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\classifier.user" />
+    <Content Include="Data\cluster.user" />
+    <Content Include="Data\Configure.xml" />
+    <Content Include="Data\deepclassifier.user" />
+    <Content Include="Data\DocExtractor.user" />
+    <Content Include="Data\JZSearch.user" />
+    <Content Include="Data\keyExtract.user" />
+    <Content Include="Data\LJHtmlParser.user" />
+    <Content Include="Data\LJRedupRemover.user" />
+    <Content Include="Data\NewWord.lst" />
+    <Content Include="Data\NewWordFinder.user" />
+    <Content Include="Data\NLPIR.user" />
+    <Content Include="Data\NLPIR_trial.user" />
+    <Content Include="Data\sentiment.user" />
+    <Content Include="Data\summary.user" />
+    <Content Include="DLL\NLPIR.dll" />
+    <Content Include="filtertext.txt" />
+    <Content Include="marktext.txt" />
+    <None Include="Resources\clear1.jpg" />
+    <None Include="Resources\clear.jpg" />
+    <None Include="Resources\57106.jpg" />
+    <None Include="Resources\t01bb511e458951fc2f.jpg" />
+    <None Include="Resources\t017fe5184568c351ca.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

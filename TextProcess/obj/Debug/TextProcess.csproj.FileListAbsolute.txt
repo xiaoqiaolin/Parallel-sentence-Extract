@@ -1,0 +1,10 @@
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\bin\Debug\TextProcess.exe.config
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.exe
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.pdb
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\bin\Debug\TextProcess.exe
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\bin\Debug\TextProcess.pdb
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.Form1.resources
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.Properties.Resources.resources
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.csproj.GenerateResource.Cache
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.Form2.resources
+F:\Project\Visual Studio 2012\Projects\TextProcess\TextProcess\obj\Debug\TextProcess.csprojResolveAssemblyReference.cache
